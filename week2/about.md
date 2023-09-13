@@ -20,6 +20,12 @@
 5. Wait for installation to be completed.
 ![Alt text](snippet/image-3.png)
 
-6. Test the ROS2 with `Talked-listener` example. 
+6. Test the ROS2 with `Talked-listener C++` example. 
 
 ![Alt text](snippet/image-4.png)
+
+
+7. Test the ROS2 with `Talked-listener C++ and Python` example. 
+
+
+![Alt text](snippet/py.png)
