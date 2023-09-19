@@ -12,5 +12,5 @@ This reporsitory is created to Lab Session of `Smart Mobility Engineering Lab` f
 
 
 2. **Week 4**: We learned basics of ROS2.
-    - On the first day, we learned working with `cli`.
-    - On the second day, we learned working with `clients.`   
+    - On week_4_1st day, we learned working with `cli`.  [Detailed Explaination Here.](week4/cli_tools/about.md)
+    - On week_4_2nd day, we learned working with `clients.`   [Detailed Explaination Here.](week4/client_libraries/about.md)

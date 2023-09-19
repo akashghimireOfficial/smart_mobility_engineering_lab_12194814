@@ -101,9 +101,113 @@ After running, ros2 node list:
 We will change the node name of `turtlesim_node` to   `turtle_akash`
 ![Alt text](snippets/remap.png)
 
-## ros2 node info
+### ros2 node info
  to access the information of particular node
 
  > ros2 node info /`node_name`
 
  ![Alt text](snippets/node_info.png)
+
+ ## ros2 topics
+
+ `topics` is one of the way ros2 node communicate with each other.  
+ 
+-  communication via `topics` can be   `one to one`, or `one to many`, or `many to one` , or `many to many` .  ROS node communicate each other via `topics, actions or parameters.`
+
+- Node who send `message` via `topics` are called `publisher.`
+- Node who receive `message` via `topics` are called `subscriber.`
+- `message`: specific data type on which topics communicate.  They are defined by ``.msg``  file for custom messge.  The data includes information coming from the sensors. 
+
+### Task 
+
+Open two terminal and run : `ros2 run turtlesim turtlesim_node` , and ``ros2 run turtlesim turtle_teleop_key``. 
+
+From previous steps we know the nodes name: `/turtlesim` and `/teleop_turtle`
+
+### rqt_graph
+
+Ros2 rqt provides `rqt_graph`; this tool can be used to visualize communication of node via topics. 
+
+1. run ``rqt_graph`` 
+
+![Alt text](snippets/topic_rqt_graph.png)
+
+We can see how `/turtlesim` and `/teleop_turtle` are communicating. We can see that,  `/teleop_turtle` uses  topic name `/turtle1/cmd_val` to publish keystroke you press on command line; and the message is received by publisher `/turtlesim` node.
+
+2. ros2 topic list
+> command: ros2 topic list
+: returns the lish of all active topics
+
+In order to return the topic list with topic type use the following command:
+> ros2 topic list -t
+
+![Alt text](snippets/topic_list.png)
+
+*Note: uncheck all boxes under Hide to visualise all the topics*
+![Alt text](snippets/vis_hidden_top.png)
+
+### ros2 topic echo 
+: to know what data is being published by topic
+> command: ros2 topic echo *topic name*
+
+We know from above topic name `/turtle1/cmd_val` to publish keystroke you press on command line; and the message is received by publisher `/turtlesim` node.
+
+![Alt text](snippets/echo.png)
+
+Form the above image, you can see whenever you press key then `x`, `y`,`z` is being publish via topic `/turtle1/cmd_val`
+
+run `rqt_graph` again
+
+![Alt text](snippets/rosgraph_echo.png)
+
+In above diagram, `/_ros2cli_26646` is created by ros2 echo. 
+
+### ros2 topic info
+: returns information of running certain topic
+
+> command: ros2 topic info *topic name*
+ 
+ `ros2 topic info /turtle1/cmd_vel` return:
+ ![Alt text](snippets/topic_info.png)
+
+ ### ros2 interface show
+ ros2 topic communicate with each other `via message`. We can see the type of message being published using following command. Publisher and Subscriber must send and receive same msg type in order to communicate. 
+
+ From our previous knowledge we know that `cmd_vel` has topic type: `geometry_msgs/msg/Twist`.  This means that in  ``package geometry_msgs`` there is a msg called ``Twist``. 
+
+We can learn the detail of the particular message by using comand
+> command: ros2 inferace show *topic type*
+
+![Alt text](snippets/inferace_show.png)
+
+The above information tells us that '/turtlesim' node is expecting a message with two vectos: `linear` and `angular`, each of them have 3 elements of float64 type.
+
+This is the same type that was being echo in our previous turtorial. 
+![.](snippets/echo.png)
+
+*we can use this information to publish message from node.*
+
+### ros2 topic pub
+: used to publish data onto a topic using a command.*note: you need to know the message type in prior to this.*
+> command: ros2 topic pub *topic_name* *msg_type* '*args*'
+<br>*note: you will pass the desired data using args argument*
+
+
+Use command : ros2 topic pub --once /turtle1/cmd_vel geometry_msgs/msg/Twist "{linear: {x: 2.0, y: 0.0, z: 0.0}, angular: {x: 0.0, y: 0.0, z: 1.8}}"
+
+![Alt text](image.png)
+
+Here, above since we use --once this data will only be published signle time. *Optionally we can use ``--rate ` to determine the freqeuncy* to publish data continously 
+
+Result : 
+
+![.](snippets/pub_rate.png)
+
+```
+Refresing the rqt graph to see what is happning, you can see additional 
+```
+
+### ros2 topic hz
+: return the frequency of the message being published. 
+> command: ros2 topic hz *topic name*
+![Alt text](snippets/topic_hz.png)
