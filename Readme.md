@@ -8,7 +8,7 @@ Professor: MEHDI PIRAHANDEH
 This reporsitory is created to Lab Session of `Smart Mobility Engineering Lab` from ISE Department, Inha University. You will find folders dedicated for each week lab session. Under each of these folder you will again find `About.md` where i will upload what we learn in that particular week. 
 
 
-1. **Week 3**: Installing  Ubuntu, and ROS2 Humble. [Detailed Explaination Here.](week2/about.md)
+1. **Week 3**: Installing  Ubuntu, and ROS2 Humble. [Detailed Explaination Here.](week3/about.md)
 
 
 2. **Week 4**: We learned basics of ROS2.
