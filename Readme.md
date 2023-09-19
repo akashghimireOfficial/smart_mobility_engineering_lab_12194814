@@ -11,3 +11,7 @@ This reporsitory is created to Lab Session of `Smart Mobility Engineering Lab` f
 1. **Week 3**: Installing  Ubuntu, and ROS2 Humble.
 
 See,[about_md_file](week2/about.md)
+
+2. **Week 4**: We learned basics of ROS2.
+    - On the first day, we learned working with `cli`.
+    - On the second day, we learned working with `clients.`   
