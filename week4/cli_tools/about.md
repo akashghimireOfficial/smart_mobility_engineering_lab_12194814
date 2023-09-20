@@ -211,3 +211,50 @@ Refresing the rqt graph to see what is happning, you can see additional
 : return the frequency of the message being published. 
 > command: ros2 topic hz *topic name*
 ![Alt text](snippets/topic_hz.png)
+
+## ros2 `services`
+- services are another method of commincation.
+- communication is made between `server` and `client.`
+- communication mode is through `Request message` and `Response message` mode
+- using the same service, multiple `servers` and `clients` can communicate to each other. 
+
+### Task
+Open two terminal and run : `ros2 run turtlesim turtlesim_node` , and ``ros2 run turtlesim turtle_teleop_key``. 
+
+### ros2 service list
+: list all the active services
+>command: ros2 service list
+![Alt text](snippets/service_list.png)
+
+### ros2 service type
+: return the type of a particular server
+> command : ros2 service type *service name*
+![Alt text](snippets/service_type.png)
+
+*Note: you can directly use ``ros2 service list -t`` to see all the active service with its types. *
+
+### ros2 service find
+: to find all the service of the same kind.
+> command: ros2 service find *service type*
+
+`clear` has type ``std_srvs/srv/Empty``
+![Alt text](snippets/service_find.png)
+
+### ros2 inferace show
+: return the message type of particular `service type.`
+> command: ros2 service inference show *type_name*
+
+- ros2 interface show std_srvs/srv/Empty 
+    - return `---` as the name suggest.
+
+
+lets try: `ros2 interface show turtlesim/srv/Spawn`
+![Alt text](snippets/service_inferace.png)
+
+The information above the --- line tells us the arguments needed to call /spawn. x, y and theta determine the 2D pose of the spawned turtle, and name is clearly optional.
+
+### ros2 service call
+: directly call the service from the command line 
+
+> command: ros2 service call *service_name* *service_type* *argument*<br> *note if type is `Empty` no need to pass any argument.*
+![Alt text](snippets/spawn_call_cli.png)
