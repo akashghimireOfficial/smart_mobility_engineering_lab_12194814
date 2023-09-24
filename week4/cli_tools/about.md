@@ -1,14 +1,43 @@
 # Begineer: cli commands 
 
-## Using `turtlesim`, `ros2`, and `rqt`
+In this readmefile, we will learn how about fundamentals of cli commands used in ROS2. We have used ROS2 humble version in this turtorial.  This section have sub-turtorials on: 
+
+
+- Using turtlesim, ros2, and rqt
+- Understanding nodes
+- Understanding topics
+- Understanding services
+- Understanding parameters
+- Understanding actions
+- Using rqt_console to view logs
+- Launching nodes
+- Recording and playing back data
+
+To make it simple there is a shell scripts executable file for each of these sections. 
+
+
+## 1. Using `turtlesim`, `ros2`, and `rqt`
 
 ### Installing: turtlesim and rqt using bash file
 
-1. Change the bash file to executable, to do this run:
-> sudo chmod 777 -R .
+1. Run the bash file `./week4/cli_tools/turtlesim_rqt.sh`
+The first step is to make the file executable
+- change the directory
+    >cd week4/cli_tools/
+- make the file executable
+    > chmod +x turtlesim_rqt.sh
 
-2. After this, execute the bash file:
-> ./install_turtlesim_rqt.bash
+
+
+2. Run the executable file
+    >  ./turtlesim_rqt.sh
+
+
+![Alt text](snippets/bash_1.png)
+This will open window that open `turtlesim`, a window to control the turtle, and `rqt` window. 
+
+Each of these have been further explined
+
 
 ![Alt text](snippets/image.png)
 
@@ -16,21 +45,23 @@
 Turtlesim is a lightweight simulator for learning ROS 2. It illustrates what ROS 2 does at the most basic level to give you an idea of what you will do with a real robot or a robot simulation later on.
 
 1. Verify if the package is installed or not
-> ros2 pkg executables turtlesim
-![Alt text](snippets/image-1.png)
+> To check this you can scroll the output of bash file, and verify installation
+![Alt text](snippets/verify_turtlesim.png)
 
 2. Start turtlesim
-> ros2 run turtlesim turtlesim_node
+Running `./turtlesim_rqt.sh` will open turtlesim node window automatially.
 
-The above command will open a simulator window.
-![Alt text](snippets/image-2.png)
+![Alt text](snippets/turtlesim_open.png)
+
 
 3. Use turtlesim
-In order to use turtlesim, we need to open a new node to control it:
-> ros2 run turtlesim turtle_teleop_key
+In order to use turtlesim, we need to input "arrow key" in teleop_turtle command window
 
-A new terminal will open, and you can use the arrow button to control the turtlebot in the simulator.
+
+
 ![Alt text](snippets/image-3.png)
+
+
 
 4. Using `ros2` tools such as: `ros2 node list`,  `ros2 topic list`, `ros2 service list`, `ros2 action list`,
 ![Alt text](snippets/image-4.png)
@@ -54,16 +85,40 @@ Now, when you `refresh`, then you can see the `turtle2` service as well.
 We will change the color of the line and its width to 'red' and '5', respectively.
 ![Alt text](snippets/image-7.png)
 
+4. Remapping
+We can now remap our control to run turtle2 we have just spawn, using the Remap command, already used in bash file. 
+A new `turtle_teleop_key` to control newly  `spawn` turtle2.
+![Alt text](snippets/turtle2.png)
 
-## Understanding nodes
+
+
+## 2. Understanding nodes
 
 We will learn about the function of nodes in `ROS2`, and the tools to interact with them. 
 
+1. Run the bash file `./week4/cli_tools/turtlesim_rqt.sh`
+The first step is to make the file executable
+- change the directory
+    >cd week4/cli_tools/
+- make the file executable
+    > chmod +x node.sh
+
+
+
+2. Run the executable file
+    >  ./node.sh
+
+Running the bash will run the important cli commands to understand the ROS2 node. This has been detailly explained below
+![Alt text](snippets/bas_node.png)
+
+I have further explained each of these commands in more details below.
+
 ### Ros2 Graph
- ROS graph is a network of ROS2 elements processing data together at the same time.
+ ROS graph is a network of ROS2 elements processing data together at the same time. 
+
 
  ## Nodes
- Nod is a standalone process that performs a specific task or set of tasks within robotics system.  Node can communicate `one to one`, or `one to many`, or `many to one` , or `many to many` .  ROS node communicate each other via `topics, actions or parameters.`
+ Node is a standalone process that performs a specific task or set of tasks within robotics system.  Node can communicate `one to one`, or `one to many`, or `many to one` , or `many to many` .  ROS node communicate each other via `topics, actions or parameters.`
 
  ``Some important ros2 command``
 ### ros2 run
@@ -108,7 +163,7 @@ We will change the node name of `turtlesim_node` to   `turtle_akash`
 
  ![Alt text](snippets/node_info.png)
 
- ## ros2 topics
+ ## 3. ros2 topics
 
  `topics` is one of the way ros2 node communicate with each other.  
  
@@ -117,6 +172,12 @@ We will change the node name of `turtlesim_node` to   `turtle_akash`
 - Node who send `message` via `topics` are called `publisher.`
 - Node who receive `message` via `topics` are called `subscriber.`
 - `message`: specific data type on which topics communicate.  They are defined by ``.msg``  file for custom messge.  The data includes information coming from the sensors. 
+
+`How to run shell scripts for ros2 topics ? `:
+- chmod +x topics.sh
+- ./topics.sh
+
+I have explained in more detailed below; however, you can just run shell script to automate and fasten your experience.
 
 ### Task 
 
@@ -218,8 +279,11 @@ Refresing the rqt graph to see what is happning, you can see additional
 - communication mode is through `Request message` and `Response message` mode
 - using the same service, multiple `servers` and `clients` can communicate to each other. 
 
-### Task
-Open two terminal and run : `ros2 run turtlesim turtlesim_node` , and ``ros2 run turtlesim turtle_teleop_key``. 
+`How to run shell scripts for ros2 services ? `:
+- chmod +x services.sh
+- ./services.sh
+
+>I have explained each terminology in more detail, however you can simply run the above shell script to autmate thing
 
 ### ros2 service list
 : list all the active services
@@ -258,3 +322,53 @@ The information above the --- line tells us the arguments needed to call /spawn.
 
 > command: ros2 service call *service_name* *service_type* *argument*<br> *note if type is `Empty` no need to pass any argument.*
 ![Alt text](snippets/spawn_call_cli.png)
+
+## Understanding Parameters
+- parameter are used to set *configuration*
+- for example, you can set the maximum speed of robot. 
+- Parameter can be saved in different datatypes such as float, integer, strings, booleans, and lists. 
+
+
+`How to run shell scripts for ros2 param ? `:
+- chmod +x params.sh
+- ./params.sh
+
+
+![Alt text](snippets/param1.png)
+
+
+## ros2 actions
+
+Action is one of the communication types in ROS2. They consist of three parts: a goal, feedback, and a result.
+
+Action are similar to that of  `service` and `actions`, but they are different as they can be canceled. 
+
+`How to run shell scripts for ros2 param ? `:
+- chmod +x actions.sh
+- ./actions.sh
+
+The G|B|V|C|D|E|R|T keys in `/teleop_turtle` correspond to absolute orientations in `turtlesim`. Pressing these keys sends a rotation goal to the action server of the `/turtlesim` node. Once the turtle completes its rotation, the outcome of the goal is displayed in the terminal.
+
+![Alt text](snippets/goal_complete.png)
+
+Other commands are very similar to that of other like list, info.
+![Alt text](snippets/action2.png)
+
+## ROS2 Launch
+This allows to run multiples nodes using a single command. You can check it using the shell script
+- chmod +x launching_nodes.sh
+- ./launching_nodes.sh
+
+![Alt text](snippets/launch.png)
+
+## ROS2 Recording
+
+This is used to capture and replaying flows. This allows to capture or record messages exchange between nodes. Important command
+> ros2 bag record
+The above command record the data
+> ros2 bag play
+The above command play the recorded (simulation)
+
+`How to run shell scripts for ros2 recording(bag and play) ? `:
+- chmod +x actions.sh
+- ./actions.sh
