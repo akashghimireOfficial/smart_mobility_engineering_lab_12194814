@@ -18,3 +18,10 @@ This reporsitory is created to Lab Session of `Smart Mobility Engineering Lab` f
 3. **Week 5**: ROS2 Intermediate
     - Note: From this week, I will be using python only. This is mainly because we are planning to integrate ML in our final project.
     - [Detailed Explaination Here.](week5/about.md)
+
+
+
+3. **Week 6**: ROS2 Advanced
+    - [Shell scripts files Here](week6/shell_files/ )
+    - [Detailed Explaination Here.](week6/about.md)
+
