@@ -59,6 +59,27 @@ chmod +x fast_dds.sh
 ## 3. Implementing a custom memory allocator
 In this subsection we will implement a custom memeory allocator in ROS2 C++ code.
 
+
+If you aim to write real-time safe code, it's crucial to be wary of the "new" call during real-time critical sections due to its nondeterministic nature on most platforms. By default, many C++ library structures, like std::vector, allocate memory implicitly. However, you can provide these structures with a custom allocator, ensuring they use preallocated memory from a pool, which is more real-time friendly. Similarly, in ROS 2's C++ client library (rclcpp), elements like Publishers, Subscribers, and the Executor are designed to accept custom allocators to manage memory efficiently during execution.
+
+### Writing an allocator
+For an allocator to work seamlessly with ROS 2's allocator interface, it should align with the C++ standard library allocator interface.
+
+C++11 introduces allocator_traits, which streamlines the process of defining custom allocators. While the C++11 standard highlights a basic set of criteria for custom allocators to manage memory using standardized methods, allocator_traits automatically supplements the allocator with additional features, given that it meets these foundational requirements.
+
+``Run the following command to execute shell scripts related to this part.`
+
+```bash
+cd week6/shell_files
+chmod +x alloc.sh
+./alloc.sh
+```
+
+### Snippets
+![Alt text](image-4.png)
+
+
+
 ## 4. Unlocking the potential of Fast DDS middleware [community-contributed]
 ## 5. Recording a bag from a node (Python)
 ## 6. Reading from a bag file (C++)
