@@ -80,8 +80,53 @@ chmod +x alloc.sh
 
 
 
-## 4. Unlocking the potential of Fast DDS middleware [community-contributed]
-## 5. Recording a bag from a node (Python)
-## 6. Reading from a bag file (C++)
-## 7. Simulators
-## 8. Security
+
+## 4. Recording a bag from a node (Python)
+
+## 5. Simulators : webots
+Webots is a widely-used open-source robot simulator that allows users to design complex robotic setups, simulate them in a physics-based environment, and then potentially export the generated code to real-world robots. 
+
+Webots and ROS 2 (Robot Operating System 2) integration provide a powerful combination for both robotic simulation and real-world robotic application development. 
+
+### a. Installing
+``Run the following command to execute shell scripts related to this part.`
+
+```bash
+cd week6/shell_files
+chmod +x install_webots.sh
+./install_webots.sh
+```
+#### Snippets 
+![Alt text](image-5.png)
+
+Installation was done. However, could not find define ros2 package `webots_ros2_universal_robot` as below. 
+![Alt text](image-6.png)
+
+### b. Setting up a robot simulations
+``Run the following command to execute shell scripts related to this part.`
+
+```bash
+cd week6/shell_files
+chmod +x set_webots_basic.sh
+./set_webots_basic.sh
+```
+
+After this you will need to make the following changes as follow: 
+![Alt text](image-7.png)
+
+Adding the `.urdf` file.
+
+![Alt text](image-8.png)
+
+![Alt text](image-9.png)
+
+#### building
+![Alt text](image-10.png)
+
+
+
+
+
+
+## 7. Simulators: gazebo
+## 6. Security
