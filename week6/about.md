@@ -53,7 +53,7 @@ chmod +x fast_dds.sh
 ./fast_dds.sh
 ```
 
-### Snippets Result 
+### `Snippets of Result `
 ![Alt text](image-3.png)
 
 ## 3. Implementing a custom memory allocator
@@ -74,8 +74,7 @@ cd week6/shell_files
 chmod +x alloc.sh
 ./alloc.sh
 ```
-
-### Snippets
+### `Snippets of Result `
 ![Alt text](image-4.png)
 
 
@@ -120,7 +119,7 @@ Adding the `.urdf` file.
 
 ![Alt text](image-9.png)
 
-#### building
+### **building**
 ![Alt text](image-10.png)
 
 
@@ -129,4 +128,15 @@ Adding the `.urdf` file.
 
 
 ## 7. Simulators: gazebo
+
+### a. Installation
+To install gazebo run the folllowing command in the command terminal:
+
+```bash
+cd week6/shell_files
+chmod +x install_gazebo.sh
+./install_gazebo.sh
+```
+The above installation should take around 5 minutes. After sucessfull installtion, you can see similar output in the terminal.
+![Alt text](image-11.png)
 ## 6. Security
