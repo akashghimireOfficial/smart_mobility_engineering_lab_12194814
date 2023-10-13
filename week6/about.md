@@ -138,5 +138,5 @@ chmod +x install_gazebo.sh
 ./install_gazebo.sh
 ```
 The above installation should take around 5 minutes. After sucessfull installtion, you can see similar output in the terminal.
-![Alt text](image-11.png)
+![Alt text](image-12.png)
 ## 6. Security
