@@ -30,6 +30,8 @@ install(TARGETS
   listener
   DESTINATION lib/${PROJECT_NAME})
 ```
+This will look something like this: 
+![Alt text](image-13.png)
 And rerun the shell scripts again. 
 
 ### Snippets
@@ -81,8 +83,38 @@ chmod +x alloc.sh
 
 
 ## 4. Recording a bag from a node (Python)
+Rosbag2 not only offers the 'ros2 bag' command-line tool but also has a Python API for interacting with bags using your own code. This lets you simultaneously capture and process topic data, eliminating the need to send processed data over a topic just for recording. Beyond topic data, you can also store synthetic data like training sets in a bag, making it convenient to produce bags with numerous samples over extended durations.
+
+
+### a. Installing
+``Run the following command to execute shell scripts related to this part.`
+
+```bash
+cd week6/shell_files
+chmod +x ros_bag_python.sh
+./ros_bag_python.sh
+```
+This will build the necessary package as shown in the screenshots
+![Alt text](image-14.png)
+
+Need to make somechanges in the src files: 
+**Updated setup.xml**
+![Alt text](image-15.png)
+
+**Updated `setup.py`**
+![Alt text](image-16.png)
+
+**Adding the executable files**
+![Alt text](image-17.png)
+
+### `Snippets of Result`
+1. Started Recording
+![Alt text](image-18.png)
+
+2. Playing the Recording
 
 ## 5. Simulators : webots
+
 Webots is a widely-used open-source robot simulator that allows users to design complex robotic setups, simulate them in a physics-based environment, and then potentially export the generated code to real-world robots. 
 
 Webots and ROS 2 (Robot Operating System 2) integration provide a powerful combination for both robotic simulation and real-world robotic application development. 
@@ -100,6 +132,7 @@ chmod +x install_webots.sh
 
 Installation was done. However, could not find define ros2 package `webots_ros2_universal_robot` as below. 
 ![Alt text](image-6.png)
+
 
 ### b. Setting up a robot simulations
 ``Run the following command to execute shell scripts related to this part.`
