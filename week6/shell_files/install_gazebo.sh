@@ -12,4 +12,4 @@ sudo apt install ros-humble-gazebo-ros-pkgs
 
 ## Verifying the instllation 
 
-gazebo --version
+ros2 pkg list | grep gazebo

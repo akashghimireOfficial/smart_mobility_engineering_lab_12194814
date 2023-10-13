@@ -9,7 +9,7 @@ In this turtorial we will be learning on the following topics:
 5. Recording a bag from a node (Python)
 6. Reading from a bag file (C++)
 7. Simulators
-8. Security
+
 
 ## 1. Enabling topic statistics (C++)
 Topic Statistics in ROS 2 offers built-in metrics gathering for messages received by any subscription. When enabled for a subscription, Topic Statistics allows for system performance characterization and aids in troubleshooting existing issues.
@@ -172,4 +172,9 @@ chmod +x install_gazebo.sh
 ```
 The above installation should take around 5 minutes. After sucessfull installtion, you can see similar output in the terminal.
 ![Alt text](image-12.png)
-## 6. Security
+
+`Installation Verification`
+![Alt text](image-19.png)
+
+## Snipshot of packages created in ``ros_ws/src``
+![Alt text](image-20.png)
