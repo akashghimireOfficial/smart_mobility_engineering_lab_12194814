@@ -1,0 +1,41 @@
+[1.240s] Invoking command in '/home/akash/w7_ws/src/distance_travel': PYTHONPATH=/home/akash/w7_ws/build/distance_travel/prefix_override:/home/akash/w7_ws/install/distance_travel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/distance_travel build --build-base /home/akash/w7_ws/build/distance_travel/build install --record /home/akash/w7_ws/build/distance_travel/install.log --single-version-externally-managed
+[1.601s] running egg_info
+[1.602s] creating ../../build/distance_travel/distance_travel.egg-info
+[1.603s] writing ../../build/distance_travel/distance_travel.egg-info/PKG-INFO
+[1.603s] writing dependency_links to ../../build/distance_travel/distance_travel.egg-info/dependency_links.txt
+[1.604s] writing entry points to ../../build/distance_travel/distance_travel.egg-info/entry_points.txt
+[1.604s] writing requirements to ../../build/distance_travel/distance_travel.egg-info/requires.txt
+[1.604s] writing top-level names to ../../build/distance_travel/distance_travel.egg-info/top_level.txt
+[1.604s] writing manifest file '../../build/distance_travel/distance_travel.egg-info/SOURCES.txt'
+[1.606s] reading manifest file '../../build/distance_travel/distance_travel.egg-info/SOURCES.txt'
+[1.607s] writing manifest file '../../build/distance_travel/distance_travel.egg-info/SOURCES.txt'
+[1.608s] running build
+[1.608s] running build_py
+[1.608s] creating /home/akash/w7_ws/build/distance_travel/build
+[1.609s] creating /home/akash/w7_ws/build/distance_travel/build/lib
+[1.609s] creating /home/akash/w7_ws/build/distance_travel/build/lib/distance_travel
+[1.609s] copying distance_travel/__init__.py -> /home/akash/w7_ws/build/distance_travel/build/lib/distance_travel
+[1.610s] copying distance_travel/travel_distance_server.py -> /home/akash/w7_ws/build/distance_travel/build/lib/distance_travel
+[1.610s] copying distance_travel/distance_monitor.py -> /home/akash/w7_ws/build/distance_travel/build/lib/distance_travel
+[1.610s] copying distance_travel/travel_distance_client.py -> /home/akash/w7_ws/build/distance_travel/build/lib/distance_travel
+[1.611s] running install
+[1.611s] running install_lib
+[1.611s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.612s]   warnings.warn(
+[1.612s] creating /home/akash/w7_ws/install/distance_travel/lib/python3.10/site-packages/distance_travel
+[1.612s] copying /home/akash/w7_ws/build/distance_travel/build/lib/distance_travel/__init__.py -> /home/akash/w7_ws/install/distance_travel/lib/python3.10/site-packages/distance_travel
+[1.613s] copying /home/akash/w7_ws/build/distance_travel/build/lib/distance_travel/distance_monitor.py -> /home/akash/w7_ws/install/distance_travel/lib/python3.10/site-packages/distance_travel
+[1.613s] copying /home/akash/w7_ws/build/distance_travel/build/lib/distance_travel/travel_distance_client.py -> /home/akash/w7_ws/install/distance_travel/lib/python3.10/site-packages/distance_travel
+[1.613s] copying /home/akash/w7_ws/build/distance_travel/build/lib/distance_travel/travel_distance_server.py -> /home/akash/w7_ws/install/distance_travel/lib/python3.10/site-packages/distance_travel
+[1.613s] byte-compiling /home/akash/w7_ws/install/distance_travel/lib/python3.10/site-packages/distance_travel/__init__.py to __init__.cpython-310.pyc
+[1.614s] byte-compiling /home/akash/w7_ws/install/distance_travel/lib/python3.10/site-packages/distance_travel/distance_monitor.py to distance_monitor.cpython-310.pyc
+[1.615s] byte-compiling /home/akash/w7_ws/install/distance_travel/lib/python3.10/site-packages/distance_travel/travel_distance_client.py to travel_distance_client.cpython-310.pyc
+[1.616s] byte-compiling /home/akash/w7_ws/install/distance_travel/lib/python3.10/site-packages/distance_travel/travel_distance_server.py to travel_distance_server.cpython-310.pyc
+[1.616s] running install_egg_info
+[1.619s] Copying ../../build/distance_travel/distance_travel.egg-info to /home/akash/w7_ws/install/distance_travel/lib/python3.10/site-packages/distance_travel-0.0.1-py3.10.egg-info
+[1.621s] running install_scripts
+[1.654s] Installing distance_monitor script to /home/akash/w7_ws/install/distance_travel/lib/distance_travel
+[1.654s] Installing travel_distance_client script to /home/akash/w7_ws/install/distance_travel/lib/distance_travel
+[1.655s] Installing travel_distance_server script to /home/akash/w7_ws/install/distance_travel/lib/distance_travel
+[1.655s] writing list of installed files to '/home/akash/w7_ws/build/distance_travel/install.log'
+[1.692s] Invoked command in '/home/akash/w7_ws/src/distance_travel' returned '0': PYTHONPATH=/home/akash/w7_ws/build/distance_travel/prefix_override:/home/akash/w7_ws/install/distance_travel/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/distance_travel build --build-base /home/akash/w7_ws/build/distance_travel/build install --record /home/akash/w7_ws/build/distance_travel/install.log --single-version-externally-managed

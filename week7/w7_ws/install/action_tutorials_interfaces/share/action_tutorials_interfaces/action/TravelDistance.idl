@@ -1,0 +1,26 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from action_tutorials_interfaces/action/TravelDistance.action
+// generated code does not contain a copyright notice
+
+
+module action_tutorials_interfaces {
+  module action {
+    @verbatim (language="comment", text=
+      "Goal definition")
+    struct TravelDistance_Goal {
+      float start_distance;
+
+      float target_distance;
+    };
+    struct TravelDistance_Result {
+      @verbatim (language="comment", text=
+        "Result definition")
+      string confirmation;
+    };
+    struct TravelDistance_Feedback {
+      @verbatim (language="comment", text=
+        "Feedback definition")
+      float current_distance;
+    };
+  };
+};

@@ -25,3 +25,7 @@ This reporsitory is created to Lab Session of `Smart Mobility Engineering Lab` f
     - [Shell scripts files Here](week6/shell_files/ )
     - [Detailed Explaination Here.](week6/about.md)
 
+3. **Week 7**: Creating Action Server and Client related to your Final Project
+    - [ws_files](week7/w7_ws/ )
+    - [Detailed Explaination Here.](week7/about.md)
+

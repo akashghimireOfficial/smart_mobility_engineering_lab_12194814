@@ -1,0 +1,13 @@
+# Goal definition
+float32 start_distance
+float32 target_distance
+
+---
+
+# Result definition
+string confirmation
+
+---
+
+# Feedback definition
+float32 current_distance

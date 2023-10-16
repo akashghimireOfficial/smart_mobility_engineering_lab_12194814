@@ -1,0 +1,5 @@
+[console_scripts]
+distance_monitor = distance_travel.distance_monitor:main
+travel_distance_client = distance_travel.travel_distance_client:main
+travel_distance_server = distance_travel.travel_distance_server:main
+
