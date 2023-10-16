@@ -1,0 +1,36 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage[margin=1cm]{geometry}
+\usetikzlibrary{positioning, arrows.meta}
+
+\pagestyle{empty} % No page numbers
+
+\begin{document}
+\begin{center}
+\begin{tikzpicture}[node distance=1cm and 0.5cm, auto, thick]
+
+    % Nodes for Action Client
+    \node[draw, rectangle, align=center] (client) {TravelDistance\\Client};
+    \node[above=of client] (goalReq) {goal request};
+    \node[below=of client] (resultReq) {result request};
+
+    % Nodes for Action Server
+    \node[draw, rectangle, align=center, right=of client, xshift=2cm] (server) {TravelDistance\\Server};
+    \node[above=of server] (handleGoal) {handle\_goal};
+    \node[below=of handleGoal] (feedback) {publish feedback};
+    \node[below=of feedback] (setResult) {set result};
+
+    % Nodes for Execution Method
+    \node[right=of server, xshift=2cm] (execMethod) {User defined\\execution method};
+    \draw[dotted] (server.east) -- (execMethod.west);
+
+    % Lines and Arrows
+    \draw[->] (goalReq.east) -- node[midway, above] {goal response (accept)} (handleGoal.west);
+    \draw[->] (handleGoal.east) -- (execMethod.west);
+    \draw[->] (execMethod) -- node[midway, above] {publish feedback} (feedback.east);
+    \draw[->] (execMethod) -- node[midway, above] {set result} (setResult.east);
+    \draw[<-] (resultReq.east) -- node[midway, above] {result response} (setResult.west);
+
+\end{tikzpicture}
+\end{center}
+\end{document}

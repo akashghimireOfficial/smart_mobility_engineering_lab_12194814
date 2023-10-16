@@ -9,6 +9,14 @@ So, this week i create a ` ROS2 Distance Travel System`.
 - Role of ROS2 in automation and robotics.
 - Purpose: Move a robot (or any entity) from one position to another based on a target distance.
 
+## Interaction Diagram
+
+I have used `'Overleaf'` to create this diagram. I have attached the snippet of it. 
+
+![Alt text](image-6.png)
+
+You can find the original overleaf script under[Overleaf folder.](overleaf/)
+
 ## Actions in ROS2
 
 **What are ROS2 Actions?**
