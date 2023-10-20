@@ -505,7 +505,7 @@ def generate_launch_description():
 
 ### Running using `Node` only. 
 
-
+![Alt text](image-7.png)
 
 ### Using `Launch File` :  Small Fleet Size(5)
 
