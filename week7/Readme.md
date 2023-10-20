@@ -11,9 +11,50 @@ So, this week i create a ` ROS2 Distance Travel System`.
 
 ## Interaction Diagram
 
-I have used `'Overleaf'` to create this diagram. I have attached the snippet of it. 
+<!-- I have used `'Overleaf'` to create this diagram. I have attached the snippet of it. 
 
-![Alt text](image-6.png)
+![Alt text](image-6.png) -->
+
+```sql
++------------------------------------------------------------------------------+
+|                                                                              |
+|                        Travel Distance Action Server (Node)                  |
+|                                                                              |
+|          +---------------------------------------------------------+         |
+|          |              Action Server (distance_travel)            |         |
+|          |                                                         |         |
+|          |  +------------------------+   +---------------------+   |         |
+|          |  | Start & Target Distance |<->| Current Distance   |   |         |
+|          |  +------------------------+   +---------------------+   |         |
+|          +---------------------------------------------------------+         |
+|                                     |                                        |
+|                                     | Result (Confirmation of Distance)      |
+|                                     V                                        |
++------------------------------------------------------------------------------+
+                                      |
+                                      |
+                                      | Action Request, Feedback, and Result
+                                      |
+                                      |
+                                      V
++------------------------------------------------------------------------------+
+|                                                                              |
+|                        Travel Distance Action Client (Node)                  |
+|                                                                              |
+|          +---------------------------------------------------------+         |
+|          |              Action Client (distance_travel)            |         |
+|          |                                                         |         |
+|          |  +---------------------+   +--------------------+      |          |
+|          |  | Set Distance Goal   |   | Feedback (Distance)|      |          |
+|          |  +---------------------+   +--------------------+      |          |
+|          +---------------------------------------------------------+         |
+|                                     |                                        |
+|                                     | Final Result (Confirmation Message)    |
+|                                     V                                        |
++------------------------------------------------------------------------------+
+
+
+```
 
 You can find the original overleaf script under[Overleaf folder.](overleaf/)
 
