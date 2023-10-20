@@ -1,0 +1,339 @@
+[0.000000] (-) TimerEvent: {}
+[0.000318] (-) JobUnselected: {'identifier': 'fleet_management'}
+[0.000374] (fleet_action) JobQueued: {'identifier': 'fleet_action', 'dependencies': OrderedDict()}
+[0.000447] (fleet_action) JobStarted: {'identifier': 'fleet_action'}
+[0.065259] (fleet_action) JobProgress: {'identifier': 'fleet_action', 'progress': 'cmake'}
+[0.066236] (fleet_action) Command: {'cmd': ['/usr/bin/cmake', '/home/akash/ros2_midterm_ws/src/fleet_action', '-DCMAKE_INSTALL_PREFIX=/home/akash/ros2_midterm_ws/install/fleet_action'], 'cwd': '/home/akash/ros2_midterm_ws/build/fleet_action', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'akash'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/akash'), ('OLDPWD', '/home/akash/ros2_midterm_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu'), ('_colcon_cd_root', '/opt/ros/humble/'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/akash/ros2_midterm_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'akash'), ('NAME', 'DESKTOP-77BUMQ9'), ('WSL_INTEROP', '/run/WSL/399_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/akash/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/VMware/VMware Player/bin/:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.3/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.3/libnvvp:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2021.1.0/:/mnt/c/Program Files/Git/cmd:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git LFS:/mnt/c/Users/Akash Ghimire/anaconda3:/mnt/c/Users/Akash Ghimire/anaconda3/Library/mingw-w64/bin:/mnt/c/Users/Akash Ghimire/anaconda3/Library/usr/bin:/mnt/c/Users/Akash Ghimire/anaconda3/Library/bin:/mnt/c/Users/Akash Ghimire/anaconda3/Scripts:/mnt/c/Users/Akash Ghimire/.dotnet/tools:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.3:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.3/include:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.3/lib/x64:/mnt/c/Program Files/Git/bin:/mnt/e/Python Projects/Research workspace/backbone/bottomup/openpose/tf_pose_estimation:/mnt/c/Users/Akash Ghimire/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/JetBrains/PyCharm Community Edition 2023.1/bin/pycharm64.exe:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '100'), ('AMENT_PREFIX_PATH', '/home/akash/ros2_midterm_ws/install/fleet_management:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('WEBOTS_HOME', '/usr/local/webots'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/akash/ros2_midterm_ws/build/fleet_action'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/akash/ros2_midterm_ws/install/fleet_management/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/home/akash/ros2_midterm_ws/install/fleet_management:/opt/ros/humble')]), 'shell': False}
+[0.098354] (-) TimerEvent: {}
+[0.198763] (-) TimerEvent: {}
+[0.299197] (-) TimerEvent: {}
+[0.393106] (fleet_action) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.399351] (-) TimerEvent: {}
+[0.499803] (-) TimerEvent: {}
+[0.600265] (-) TimerEvent: {}
+[0.700728] (-) TimerEvent: {}
+[0.801511] (-) TimerEvent: {}
+[0.902040] (-) TimerEvent: {}
+[1.002483] (-) TimerEvent: {}
+[1.102913] (-) TimerEvent: {}
+[1.203374] (-) TimerEvent: {}
+[1.303865] (-) TimerEvent: {}
+[1.404377] (-) TimerEvent: {}
+[1.499994] (fleet_action) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[1.504468] (-) TimerEvent: {}
+[1.604872] (-) TimerEvent: {}
+[1.705363] (-) TimerEvent: {}
+[1.805804] (-) TimerEvent: {}
+[1.906230] (-) TimerEvent: {}
+[2.006650] (-) TimerEvent: {}
+[2.107558] (-) TimerEvent: {}
+[2.208007] (-) TimerEvent: {}
+[2.308560] (-) TimerEvent: {}
+[2.354371] (fleet_action) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[2.408684] (-) TimerEvent: {}
+[2.509124] (-) TimerEvent: {}
+[2.596337] (fleet_action) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[2.604812] (fleet_action) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[2.605495] (fleet_action) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[2.606899] (fleet_action) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[2.609233] (-) TimerEvent: {}
+[2.612364] (fleet_action) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.709455] (-) TimerEvent: {}
+[2.809902] (-) TimerEvent: {}
+[2.871951] (fleet_action) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.880367] (fleet_action) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.880712] (fleet_action) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.881253] (fleet_action) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.888223] (fleet_action) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.5 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.910040] (-) TimerEvent: {}
+[3.010389] (-) TimerEvent: {}
+[3.069378] (fleet_action) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3.10 (found version "3.10.12") found components: Interpreter \n'}
+[3.110545] (-) TimerEvent: {}
+[3.193665] (fleet_action) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[3.199534] (fleet_action) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[3.210279] (fleet_action) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[3.210674] (-) TimerEvent: {}
+[3.311014] (-) TimerEvent: {}
+[3.411465] (-) TimerEvent: {}
+[3.511881] (-) TimerEvent: {}
+[3.560016] (fleet_action) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[3.612074] (-) TimerEvent: {}
+[3.712537] (-) TimerEvent: {}
+[3.812895] (-) TimerEvent: {}
+[3.913283] (-) TimerEvent: {}
+[4.013358] (fleet_action) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[4.013562] (-) TimerEvent: {}
+[4.113869] (-) TimerEvent: {}
+[4.214229] (-) TimerEvent: {}
+[4.217988] (fleet_action) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[4.314385] (-) TimerEvent: {}
+[4.414784] (-) TimerEvent: {}
+[4.470230] (fleet_action) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[4.514917] (-) TimerEvent: {}
+[4.615357] (-) TimerEvent: {}
+[4.715831] (-) TimerEvent: {}
+[4.771873] (fleet_action) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[4.775061] (fleet_action) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[4.816062] (-) TimerEvent: {}
+[4.916454] (-) TimerEvent: {}
+[5.016861] (-) TimerEvent: {}
+[5.117264] (-) TimerEvent: {}
+[5.217681] (-) TimerEvent: {}
+[5.318106] (-) TimerEvent: {}
+[5.418583] (-) TimerEvent: {}
+[5.518992] (-) TimerEvent: {}
+[5.619432] (-) TimerEvent: {}
+[5.697340] (fleet_action) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[5.697568] (fleet_action) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[5.697667] (fleet_action) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[5.697756] (fleet_action) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[5.718745] (fleet_action) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[5.719524] (-) TimerEvent: {}
+[5.819877] (-) TimerEvent: {}
+[5.852778] (fleet_action) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.8 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[5.887137] (fleet_action) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[5.889009] (fleet_action) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[5.892831] (fleet_action) StdoutLine: {'line': b'-- Configuring done\n'}
+[5.920104] (-) TimerEvent: {}
+[5.926986] (fleet_action) StdoutLine: {'line': b'-- Generating done\n'}
+[5.929368] (fleet_action) StdoutLine: {'line': b'-- Build files have been written to: /home/akash/ros2_midterm_ws/build/fleet_action\n'}
+[5.939751] (fleet_action) CommandEnded: {'returncode': 0}
+[5.940399] (fleet_action) JobProgress: {'identifier': 'fleet_action', 'progress': 'build'}
+[5.940430] (fleet_action) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/akash/ros2_midterm_ws/build/fleet_action', '--', '-j16', '-l16'], 'cwd': '/home/akash/ros2_midterm_ws/build/fleet_action', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'akash'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/akash'), ('OLDPWD', '/home/akash/ros2_midterm_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu'), ('_colcon_cd_root', '/opt/ros/humble/'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/akash/ros2_midterm_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'akash'), ('NAME', 'DESKTOP-77BUMQ9'), ('WSL_INTEROP', '/run/WSL/399_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/akash/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/VMware/VMware Player/bin/:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.3/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.3/libnvvp:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2021.1.0/:/mnt/c/Program Files/Git/cmd:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git LFS:/mnt/c/Users/Akash Ghimire/anaconda3:/mnt/c/Users/Akash Ghimire/anaconda3/Library/mingw-w64/bin:/mnt/c/Users/Akash Ghimire/anaconda3/Library/usr/bin:/mnt/c/Users/Akash Ghimire/anaconda3/Library/bin:/mnt/c/Users/Akash Ghimire/anaconda3/Scripts:/mnt/c/Users/Akash Ghimire/.dotnet/tools:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.3:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.3/include:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.3/lib/x64:/mnt/c/Program Files/Git/bin:/mnt/e/Python Projects/Research workspace/backbone/bottomup/openpose/tf_pose_estimation:/mnt/c/Users/Akash Ghimire/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/JetBrains/PyCharm Community Edition 2023.1/bin/pycharm64.exe:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '100'), ('AMENT_PREFIX_PATH', '/home/akash/ros2_midterm_ws/install/fleet_management:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('WEBOTS_HOME', '/usr/local/webots'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/akash/ros2_midterm_ws/build/fleet_action'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/akash/ros2_midterm_ws/install/fleet_management/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/home/akash/ros2_midterm_ws/install/fleet_management:/opt/ros/humble')]), 'shell': False}
+[5.970664] (fleet_action) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[5.978483] (fleet_action) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[5.984973] (fleet_action) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_copy_fleet_action\n'}
+[6.020276] (-) TimerEvent: {}
+[6.120661] (-) TimerEvent: {}
+[6.221098] (-) TimerEvent: {}
+[6.242627] (fleet_action) StdoutLine: {'line': b'running egg_info\n'}
+[6.243462] (fleet_action) StdoutLine: {'line': b'creating fleet_action.egg-info\n'}
+[6.243901] (fleet_action) StdoutLine: {'line': b'writing fleet_action.egg-info/PKG-INFO\n'}
+[6.244110] (fleet_action) StdoutLine: {'line': b'writing dependency_links to fleet_action.egg-info/dependency_links.txt\n'}
+[6.244285] (fleet_action) StdoutLine: {'line': b'writing top-level names to fleet_action.egg-info/top_level.txt\n'}
+[6.244488] (fleet_action) StdoutLine: {'line': b"writing manifest file 'fleet_action.egg-info/SOURCES.txt'\n"}
+[6.246385] (fleet_action) StdoutLine: {'line': b"reading manifest file 'fleet_action.egg-info/SOURCES.txt'\n"}
+[6.246919] (fleet_action) StdoutLine: {'line': b"writing manifest file 'fleet_action.egg-info/SOURCES.txt'\n"}
+[6.274872] (fleet_action) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_build_fleet_action_egg\n'}
+[6.321226] (-) TimerEvent: {}
+[6.421609] (-) TimerEvent: {}
+[6.468708] (fleet_action) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/fleet_action__rosidl_generator_c.dir/rosidl_generator_c/fleet_action/action/detail/fleet_management__functions.c.o\x1b[0m\n'}
+[6.474159] (fleet_action) StdoutLine: {'line': b'[  9%] Built target fleet_action__cpp\n'}
+[6.481898] (fleet_action) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[6.482102] (fleet_action) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[6.482190] (fleet_action) StdoutLine: {'line': b'[ 19%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[6.521930] (-) TimerEvent: {}
+[6.622605] (-) TimerEvent: {}
+[6.640713] (fleet_action) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library libfleet_action__rosidl_generator_c.so\x1b[0m\n'}
+[6.722766] (-) TimerEvent: {}
+[6.823155] (-) TimerEvent: {}
+[6.854933] (fleet_action) StdoutLine: {'line': b'[ 22%] Built target fleet_action__rosidl_generator_c\n'}
+[6.861864] (fleet_action) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/fleet_action__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/fleet_action/action/fleet_management__type_support.cpp.o\x1b[0m\n'}
+[6.862379] (fleet_action) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[6.862688] (fleet_action) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[6.862806] (fleet_action) StdoutLine: {'line': b'[ 35%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[6.873087] (fleet_action) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/fleet_action__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/fleet_action/action/detail/fleet_management__type_support.cpp.o\x1b[0m\n'}
+[6.923277] (-) TimerEvent: {}
+[6.936635] (fleet_action) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/fleet_action__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/fleet_action/action/detail/dds_fastrtps/fleet_management__type_support.cpp.o\x1b[0m\n'}
+[7.023412] (-) TimerEvent: {}
+[7.123788] (-) TimerEvent: {}
+[7.211822] (fleet_action) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/fleet_action__rosidl_typesupport_c.dir/rosidl_typesupport_c/fleet_action/action/fleet_management__type_support.cpp.o\x1b[0m\n'}
+[7.223932] (-) TimerEvent: {}
+[7.278735] (fleet_action) StdoutLine: {'line': b'[ 48%] \x1b[32m\x1b[1mLinking CXX shared library libfleet_action__rosidl_typesupport_c.so\x1b[0m\n'}
+[7.324140] (-) TimerEvent: {}
+[7.403853] (fleet_action) StdoutLine: {'line': b'[ 51%] \x1b[32mBuilding C object CMakeFiles/fleet_action__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/fleet_action/action/detail/fleet_management__type_support.c.o\x1b[0m\n'}
+[7.424276] (-) TimerEvent: {}
+[7.425071] (fleet_action) StdoutLine: {'line': b'[ 54%] \x1b[32m\x1b[1mLinking CXX shared library libfleet_action__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[7.464137] (fleet_action) StdoutLine: {'line': b'[ 58%] \x1b[32m\x1b[1mLinking C shared library libfleet_action__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[7.524446] (-) TimerEvent: {}
+[7.544900] (fleet_action) StdoutLine: {'line': b'[ 58%] Built target fleet_action__rosidl_typesupport_c\n'}
+[7.565492] (fleet_action) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/fleet_action__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/fleet_action/action/detail/fleet_management__type_support_c.cpp.o\x1b[0m\n'}
+[7.624638] (-) TimerEvent: {}
+[7.725258] (-) TimerEvent: {}
+[7.727076] (fleet_action) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library libfleet_action__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[7.735161] (fleet_action) StdoutLine: {'line': b'[ 64%] Built target fleet_action__rosidl_typesupport_cpp\n'}
+[7.741566] (fleet_action) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library libfleet_action__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[7.750910] (fleet_action) StdoutLine: {'line': b'[ 67%] Built target fleet_action__rosidl_typesupport_introspection_c\n'}
+[7.825423] (-) TimerEvent: {}
+[7.925940] (-) TimerEvent: {}
+[8.026426] (-) TimerEvent: {}
+[8.033748] (fleet_action) StdoutLine: {'line': b'[ 67%] Built target fleet_action__rosidl_typesupport_introspection_cpp\n'}
+[8.049925] (fleet_action) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library libfleet_action__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[8.050150] (fleet_action) StdoutLine: {'line': b'[ 70%] Built target fleet_action__rosidl_typesupport_fastrtps_cpp\n'}
+[8.126561] (-) TimerEvent: {}
+[8.226933] (-) TimerEvent: {}
+[8.314558] (fleet_action) StdoutLine: {'line': b'[ 70%] Built target fleet_action__rosidl_typesupport_fastrtps_c\n'}
+[8.327374] (-) TimerEvent: {}
+[8.329766] (fleet_action) StdoutLine: {'line': b'[ 70%] Built target fleet_action\n'}
+[8.344786] (fleet_action) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[8.427514] (-) TimerEvent: {}
+[8.527846] (-) TimerEvent: {}
+[8.628333] (-) TimerEvent: {}
+[8.728773] (-) TimerEvent: {}
+[8.829135] (-) TimerEvent: {}
+[8.929501] (-) TimerEvent: {}
+[9.029881] (-) TimerEvent: {}
+[9.130220] (-) TimerEvent: {}
+[9.151143] (fleet_action) StdoutLine: {'line': b'[ 74%] Built target fleet_action__py\n'}
+[9.166132] (fleet_action) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/fleet_action__rosidl_generator_py.dir/rosidl_generator_py/fleet_action/action/_fleet_management_s.c.o\x1b[0m\n'}
+[9.230350] (-) TimerEvent: {}
+[9.330720] (-) TimerEvent: {}
+[9.357632] (fleet_action) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/fleet_action/libfleet_action__rosidl_generator_py.so\x1b[0m\n'}
+[9.430893] (-) TimerEvent: {}
+[9.531352] (-) TimerEvent: {}
+[9.577088] (fleet_action) StdoutLine: {'line': b'[ 80%] Built target fleet_action__rosidl_generator_py\n'}
+[9.593085] (fleet_action) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/fleet_action__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/fleet_action/_fleet_action_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[9.593388] (fleet_action) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/fleet_action__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/fleet_action/_fleet_action_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[9.593511] (fleet_action) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/fleet_action__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/fleet_action/_fleet_action_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[9.631512] (-) TimerEvent: {}
+[9.703435] (fleet_action) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/fleet_action/fleet_action_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[9.714110] (fleet_action) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/fleet_action/fleet_action_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[9.714454] (fleet_action) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/fleet_action/fleet_action_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[9.731667] (-) TimerEvent: {}
+[9.832130] (-) TimerEvent: {}
+[9.858865] (fleet_action) StdoutLine: {'line': b'[100%] Built target fleet_action__rosidl_typesupport_c__pyext\n'}
+[9.859163] (fleet_action) StdoutLine: {'line': b'[100%] Built target fleet_action__rosidl_typesupport_fastrtps_c__pyext\n'}
+[9.859269] (fleet_action) StdoutLine: {'line': b'[100%] Built target fleet_action__rosidl_typesupport_introspection_c__pyext\n'}
+[9.868520] (fleet_action) CommandEnded: {'returncode': 0}
+[9.913199] (fleet_action) JobProgress: {'identifier': 'fleet_action', 'progress': 'install'}
+[9.920131] (fleet_action) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/akash/ros2_midterm_ws/build/fleet_action'], 'cwd': '/home/akash/ros2_midterm_ws/build/fleet_action', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'akash'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/akash'), ('OLDPWD', '/home/akash/ros2_midterm_ws/src'), ('ROS_PYTHON_VERSION', '3'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('WSL_DISTRO_NAME', 'Ubuntu'), ('_colcon_cd_root', '/opt/ros/humble/'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/akash/ros2_midterm_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'akash'), ('NAME', 'DESKTOP-77BUMQ9'), ('WSL_INTEROP', '/run/WSL/399_interop'), ('PULSE_SERVER', 'unix:/mnt/wslg/PulseServer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('TERM', 'xterm-256color'), ('ROS_LOCALHOST_ONLY', '1'), ('PATH', '/home/akash/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/VMware/VMware Player/bin/:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.3/bin:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.3/libnvvp:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/Microsoft VS Code/bin:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files/dotnet/:/mnt/c/Program Files/NVIDIA Corporation/Nsight Compute 2021.1.0/:/mnt/c/Program Files/Git/cmd:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/Git LFS:/mnt/c/Users/Akash Ghimire/anaconda3:/mnt/c/Users/Akash Ghimire/anaconda3/Library/mingw-w64/bin:/mnt/c/Users/Akash Ghimire/anaconda3/Library/usr/bin:/mnt/c/Users/Akash Ghimire/anaconda3/Library/bin:/mnt/c/Users/Akash Ghimire/anaconda3/Scripts:/mnt/c/Users/Akash Ghimire/.dotnet/tools:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.3:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.3/include:/mnt/c/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v11.3/lib/x64:/mnt/c/Program Files/Git/bin:/mnt/e/Python Projects/Research workspace/backbone/bottomup/openpose/tf_pose_estimation:/mnt/c/Users/Akash Ghimire/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Program Files/JetBrains/PyCharm Community Edition 2023.1/bin/pycharm64.exe:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/1000/'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('ROS_DOMAIN_ID', '100'), ('AMENT_PREFIX_PATH', '/home/akash/ros2_midterm_ws/install/fleet_management:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('WEBOTS_HOME', '/usr/local/webots'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('PWD', '/home/akash/ros2_midterm_ws/build/fleet_action'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/akash/ros2_midterm_ws/install/fleet_management/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('WSL2_GUI_APPS_ENABLED', '1'), ('HOSTTYPE', 'x86_64'), ('WSLENV', ''), ('CMAKE_PREFIX_PATH', '/home/akash/ros2_midterm_ws/install/fleet_management:/opt/ros/humble')]), 'shell': False}
+[9.925915] (fleet_action) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.926586] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/ament_index/resource_index/rosidl_interfaces/fleet_action\n'}
+[9.926754] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action\n'}
+[9.927187] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action/action\n'}
+[9.927422] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action/action/fleet_management.h\n'}
+[9.927738] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action/action/detail\n'}
+[9.927921] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action/action/detail/fleet_management__struct.h\n'}
+[9.928220] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action/action/detail/fleet_management__type_support.h\n'}
+[9.928515] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action/action/detail/fleet_management__functions.c\n'}
+[9.928663] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action/action/detail/fleet_management__functions.h\n'}
+[9.928816] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action/msg\n'}
+[9.928967] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action/msg/rosidl_generator_c__visibility_control.h\n'}
+[9.929234] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/environment/library_path.sh\n'}
+[9.929442] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/environment/library_path.dsv\n'}
+[9.929521] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/lib/libfleet_action__rosidl_generator_c.so\n'}
+[9.929658] (fleet_action) StdoutLine: {'line': b'-- Set runtime path of "/home/akash/ros2_midterm_ws/install/fleet_action/lib/libfleet_action__rosidl_generator_c.so" to ""\n'}
+[9.929727] (fleet_action) StdoutLine: {'line': b'-- Up-to-date: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action\n'}
+[9.929862] (fleet_action) StdoutLine: {'line': b'-- Up-to-date: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action/action\n'}
+[9.930013] (fleet_action) StdoutLine: {'line': b'-- Up-to-date: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action/action/detail\n'}
+[9.930163] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action/action/detail/fleet_management__rosidl_typesupport_fastrtps_c.h\n'}
+[9.930313] (fleet_action) StdoutLine: {'line': b'-- Up-to-date: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action/msg\n'}
+[9.930463] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[9.930723] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/lib/libfleet_action__rosidl_typesupport_fastrtps_c.so\n'}
+[9.930805] (fleet_action) StdoutLine: {'line': b'-- Set runtime path of "/home/akash/ros2_midterm_ws/install/fleet_action/lib/libfleet_action__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[9.930870] (fleet_action) StdoutLine: {'line': b'-- Up-to-date: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action\n'}
+[9.930930] (fleet_action) StdoutLine: {'line': b'-- Up-to-date: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action/action\n'}
+[9.931046] (fleet_action) StdoutLine: {'line': b'-- Up-to-date: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action/action/detail\n'}
+[9.931206] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action/action/detail/fleet_management__type_support.c\n'}
+[9.931357] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action/action/detail/fleet_management__rosidl_typesupport_introspection_c.h\n'}
+[9.931508] (fleet_action) StdoutLine: {'line': b'-- Up-to-date: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action/msg\n'}
+[9.931657] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[9.931807] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/lib/libfleet_action__rosidl_typesupport_introspection_c.so\n'}
+[9.932075] (fleet_action) StdoutLine: {'line': b'-- Set runtime path of "/home/akash/ros2_midterm_ws/install/fleet_action/lib/libfleet_action__rosidl_typesupport_introspection_c.so" to ""\n'}
+[9.932191] (-) TimerEvent: {}
+[9.932533] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/lib/libfleet_action__rosidl_typesupport_c.so\n'}
+[9.932653] (fleet_action) StdoutLine: {'line': b'-- Set runtime path of "/home/akash/ros2_midterm_ws/install/fleet_action/lib/libfleet_action__rosidl_typesupport_c.so" to ""\n'}
+[9.932800] (fleet_action) StdoutLine: {'line': b'-- Up-to-date: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action\n'}
+[9.932955] (fleet_action) StdoutLine: {'line': b'-- Up-to-date: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action/action\n'}
+[9.933110] (fleet_action) StdoutLine: {'line': b'-- Up-to-date: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action/action/detail\n'}
+[9.933263] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action/action/detail/fleet_management__struct.hpp\n'}
+[9.933415] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action/action/detail/fleet_management__traits.hpp\n'}
+[9.933568] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action/action/detail/fleet_management__builder.hpp\n'}
+[9.933795] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action/action/fleet_management.hpp\n'}
+[9.933955] (fleet_action) StdoutLine: {'line': b'-- Up-to-date: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action\n'}
+[9.934107] (fleet_action) StdoutLine: {'line': b'-- Up-to-date: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action/action\n'}
+[9.934260] (fleet_action) StdoutLine: {'line': b'-- Up-to-date: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action/action/detail\n'}
+[9.934411] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action/action/detail/fleet_management__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[9.934562] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action/action/detail/dds_fastrtps\n'}
+[9.934713] (fleet_action) StdoutLine: {'line': b'-- Up-to-date: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action/msg\n'}
+[9.934865] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[9.935028] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/lib/libfleet_action__rosidl_typesupport_fastrtps_cpp.so\n'}
+[9.935179] (fleet_action) StdoutLine: {'line': b'-- Set runtime path of "/home/akash/ros2_midterm_ws/install/fleet_action/lib/libfleet_action__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[9.935330] (fleet_action) StdoutLine: {'line': b'-- Up-to-date: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action\n'}
+[9.935479] (fleet_action) StdoutLine: {'line': b'-- Up-to-date: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action/action\n'}
+[9.935728] (fleet_action) StdoutLine: {'line': b'-- Up-to-date: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action/action/detail\n'}
+[9.935861] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action/action/detail/fleet_management__type_support.cpp\n'}
+[9.935986] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/include/fleet_action/fleet_action/action/detail/fleet_management__rosidl_typesupport_introspection_cpp.hpp\n'}
+[9.936124] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/lib/libfleet_action__rosidl_typesupport_introspection_cpp.so\n'}
+[9.936275] (fleet_action) StdoutLine: {'line': b'-- Set runtime path of "/home/akash/ros2_midterm_ws/install/fleet_action/lib/libfleet_action__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[9.936526] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/lib/libfleet_action__rosidl_typesupport_cpp.so\n'}
+[9.936656] (fleet_action) StdoutLine: {'line': b'-- Set runtime path of "/home/akash/ros2_midterm_ws/install/fleet_action/lib/libfleet_action__rosidl_typesupport_cpp.so" to ""\n'}
+[9.936833] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/environment/pythonpath.sh\n'}
+[9.936984] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/environment/pythonpath.dsv\n'}
+[9.937134] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/local/lib/python3.10/dist-packages/fleet_action-0.0.0-py3.10.egg-info\n'}
+[9.937285] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/local/lib/python3.10/dist-packages/fleet_action-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[9.937489] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/local/lib/python3.10/dist-packages/fleet_action-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[9.937639] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/local/lib/python3.10/dist-packages/fleet_action-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[9.937809] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/local/lib/python3.10/dist-packages/fleet_action-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[9.937961] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/local/lib/python3.10/dist-packages/fleet_action\n'}
+[9.938110] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/local/lib/python3.10/dist-packages/fleet_action/action\n'}
+[9.938259] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/local/lib/python3.10/dist-packages/fleet_action/action/_fleet_management.py\n'}
+[9.938417] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/local/lib/python3.10/dist-packages/fleet_action/action/__init__.py\n'}
+[9.938613] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/local/lib/python3.10/dist-packages/fleet_action/action/_fleet_management_s.c\n'}
+[9.938680] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/local/lib/python3.10/dist-packages/fleet_action/_fleet_action_s.ep.rosidl_typesupport_c.c\n'}
+[9.938751] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/local/lib/python3.10/dist-packages/fleet_action/_fleet_action_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[9.938811] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/local/lib/python3.10/dist-packages/fleet_action/fleet_action_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[9.938871] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/local/lib/python3.10/dist-packages/fleet_action/_fleet_action_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[9.938932] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/local/lib/python3.10/dist-packages/fleet_action/fleet_action_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[9.938989] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/local/lib/python3.10/dist-packages/fleet_action/__init__.py\n'}
+[9.939051] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/local/lib/python3.10/dist-packages/fleet_action/libfleet_action__rosidl_generator_py.so\n'}
+[9.939112] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/local/lib/python3.10/dist-packages/fleet_action/fleet_action_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[9.978337] (fleet_action) StdoutLine: {'line': b"Listing '/home/akash/ros2_midterm_ws/install/fleet_action/local/lib/python3.10/dist-packages/fleet_action'...\n"}
+[9.981309] (fleet_action) StdoutLine: {'line': b"Compiling '/home/akash/ros2_midterm_ws/install/fleet_action/local/lib/python3.10/dist-packages/fleet_action/__init__.py'...\n"}
+[9.981420] (fleet_action) StdoutLine: {'line': b"Listing '/home/akash/ros2_midterm_ws/install/fleet_action/local/lib/python3.10/dist-packages/fleet_action/action'...\n"}
+[9.981508] (fleet_action) StdoutLine: {'line': b"Compiling '/home/akash/ros2_midterm_ws/install/fleet_action/local/lib/python3.10/dist-packages/fleet_action/action/__init__.py'...\n"}
+[9.981599] (fleet_action) StdoutLine: {'line': b"Compiling '/home/akash/ros2_midterm_ws/install/fleet_action/local/lib/python3.10/dist-packages/fleet_action/action/_fleet_management.py'...\n"}
+[9.984013] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/local/lib/python3.10/dist-packages/fleet_action/fleet_action_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[9.984486] (fleet_action) StdoutLine: {'line': b'-- Set runtime path of "/home/akash/ros2_midterm_ws/install/fleet_action/local/lib/python3.10/dist-packages/fleet_action/fleet_action_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[9.984805] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/local/lib/python3.10/dist-packages/fleet_action/fleet_action_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[9.985147] (fleet_action) StdoutLine: {'line': b'-- Set runtime path of "/home/akash/ros2_midterm_ws/install/fleet_action/local/lib/python3.10/dist-packages/fleet_action/fleet_action_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[9.985383] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/local/lib/python3.10/dist-packages/fleet_action/fleet_action_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[9.985586] (fleet_action) StdoutLine: {'line': b'-- Set runtime path of "/home/akash/ros2_midterm_ws/install/fleet_action/local/lib/python3.10/dist-packages/fleet_action/fleet_action_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""\n'}
+[9.985773] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/lib/libfleet_action__rosidl_generator_py.so\n'}
+[9.985939] (fleet_action) StdoutLine: {'line': b'-- Set runtime path of "/home/akash/ros2_midterm_ws/install/fleet_action/lib/libfleet_action__rosidl_generator_py.so" to ""\n'}
+[9.986209] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/action/FleetManagement.idl\n'}
+[9.986295] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/action/FleetManagement.action\n'}
+[9.986363] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/ament_index/resource_index/package_run_dependencies/fleet_action\n'}
+[9.986603] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/ament_index/resource_index/parent_prefix_path/fleet_action\n'}
+[9.986689] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/environment/ament_prefix_path.sh\n'}
+[9.986972] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/environment/ament_prefix_path.dsv\n'}
+[9.987059] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/environment/path.sh\n'}
+[9.987200] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/environment/path.dsv\n'}
+[9.987376] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/local_setup.bash\n'}
+[9.987536] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/local_setup.sh\n'}
+[9.987780] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/local_setup.zsh\n'}
+[9.987864] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/local_setup.dsv\n'}
+[9.988020] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/package.dsv\n'}
+[9.988264] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/ament_index/resource_index/packages/fleet_action\n'}
+[9.988347] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/cmake/export_fleet_action__rosidl_generator_cExport.cmake\n'}
+[9.988485] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/cmake/export_fleet_action__rosidl_generator_cExport-noconfig.cmake\n'}
+[9.988708] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/cmake/export_fleet_action__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[9.988790] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/cmake/export_fleet_action__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[9.988926] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/cmake/fleet_action__rosidl_typesupport_introspection_cExport.cmake\n'}
+[9.989174] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/cmake/fleet_action__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[9.989257] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/cmake/fleet_action__rosidl_typesupport_cExport.cmake\n'}
+[9.989415] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/cmake/fleet_action__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[9.989659] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/cmake/export_fleet_action__rosidl_generator_cppExport.cmake\n'}
+[9.989805] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/cmake/export_fleet_action__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[9.989957] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/cmake/export_fleet_action__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[9.990247] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/cmake/fleet_action__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[9.990460] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/cmake/fleet_action__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[9.990627] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/cmake/fleet_action__rosidl_typesupport_cppExport.cmake\n'}
+[9.990788] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/cmake/fleet_action__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[9.990942] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/cmake/export_fleet_action__rosidl_generator_pyExport.cmake\n'}
+[9.991203] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/cmake/export_fleet_action__rosidl_generator_pyExport-noconfig.cmake\n'}
+[9.991329] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/cmake/rosidl_cmake-extras.cmake\n'}
+[9.991473] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[9.991627] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[9.991779] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[9.991931] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[9.992082] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[9.992352] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[9.992453] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/cmake/fleet_actionConfig.cmake\n'}
+[9.992520] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/cmake/fleet_actionConfig-version.cmake\n'}
+[9.992583] (fleet_action) StdoutLine: {'line': b'-- Installing: /home/akash/ros2_midterm_ws/install/fleet_action/share/fleet_action/package.xml\n'}
+[9.994086] (fleet_action) CommandEnded: {'returncode': 0}
+[10.032592] (-) TimerEvent: {}
+[10.133027] (-) TimerEvent: {}
+[10.192365] (fleet_action) JobEnded: {'identifier': 'fleet_action', 'rc': 0}
+[10.193527] (-) EventReactorShutdown: {}

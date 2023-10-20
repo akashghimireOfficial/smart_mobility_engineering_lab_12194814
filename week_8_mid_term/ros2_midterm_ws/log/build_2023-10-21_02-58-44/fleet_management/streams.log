@@ -1,0 +1,25 @@
+[0.788s] Invoking command in '/home/akash/ROS2_course/week_8_mid_term/ros2_midterm_ws/src/fleet_management': PYTHONPATH=/home/akash/ROS2_course/week_8_mid_term/ros2_midterm_ws/build/fleet_management/prefix_override:/home/akash/ROS2_course/week_8_mid_term/ros2_midterm_ws/install/fleet_management/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/fleet_management build --build-base /home/akash/ROS2_course/week_8_mid_term/ros2_midterm_ws/build/fleet_management/build install --record /home/akash/ROS2_course/week_8_mid_term/ros2_midterm_ws/build/fleet_management/install.log --single-version-externally-managed
+[1.065s] running egg_info
+[1.066s] writing ../../build/fleet_management/fleet_management.egg-info/PKG-INFO
+[1.066s] writing dependency_links to ../../build/fleet_management/fleet_management.egg-info/dependency_links.txt
+[1.067s] writing entry points to ../../build/fleet_management/fleet_management.egg-info/entry_points.txt
+[1.067s] writing requirements to ../../build/fleet_management/fleet_management.egg-info/requires.txt
+[1.067s] writing top-level names to ../../build/fleet_management/fleet_management.egg-info/top_level.txt
+[1.069s] reading manifest file '../../build/fleet_management/fleet_management.egg-info/SOURCES.txt'
+[1.070s] writing manifest file '../../build/fleet_management/fleet_management.egg-info/SOURCES.txt'
+[1.070s] running build
+[1.070s] running build_py
+[1.070s] running install
+[1.070s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.071s]   warnings.warn(
+[1.071s] running install_lib
+[1.072s] running install_data
+[1.072s] copying launch/fleet_management_launch.py -> /home/akash/ROS2_course/week_8_mid_term/ros2_midterm_ws/install/fleet_management/share/fleet_management/launch
+[1.072s] running install_egg_info
+[1.074s] removing '/home/akash/ROS2_course/week_8_mid_term/ros2_midterm_ws/install/fleet_management/lib/python3.10/site-packages/fleet_management-0.1.0-py3.10.egg-info' (and everything under it)
+[1.074s] Copying ../../build/fleet_management/fleet_management.egg-info to /home/akash/ROS2_course/week_8_mid_term/ros2_midterm_ws/install/fleet_management/lib/python3.10/site-packages/fleet_management-0.1.0-py3.10.egg-info
+[1.075s] running install_scripts
+[1.097s] Installing fleet_management_client script to /home/akash/ROS2_course/week_8_mid_term/ros2_midterm_ws/install/fleet_management/lib/fleet_management
+[1.098s] Installing fleet_management_server_cli script to /home/akash/ROS2_course/week_8_mid_term/ros2_midterm_ws/install/fleet_management/lib/fleet_management
+[1.098s] writing list of installed files to '/home/akash/ROS2_course/week_8_mid_term/ros2_midterm_ws/build/fleet_management/install.log'
+[1.125s] Invoked command in '/home/akash/ROS2_course/week_8_mid_term/ros2_midterm_ws/src/fleet_management' returned '0': PYTHONPATH=/home/akash/ROS2_course/week_8_mid_term/ros2_midterm_ws/build/fleet_management/prefix_override:/home/akash/ROS2_course/week_8_mid_term/ros2_midterm_ws/install/fleet_management/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/fleet_management build --build-base /home/akash/ROS2_course/week_8_mid_term/ros2_midterm_ws/build/fleet_management/build install --record /home/akash/ROS2_course/week_8_mid_term/ros2_midterm_ws/build/fleet_management/install.log --single-version-externally-managed

@@ -1,0 +1,4 @@
+Invoking command in '/home/akash/ROS2_course/week_8_mid_term/ros2_midterm_ws/build/fleet_action': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/akash/ROS2_course/week_8_mid_term/ros2_midterm_ws/build/fleet_action -- -j16 -l16
+Invoked command in '/home/akash/ROS2_course/week_8_mid_term/ros2_midterm_ws/build/fleet_action' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/akash/ROS2_course/week_8_mid_term/ros2_midterm_ws/build/fleet_action -- -j16 -l16
+Invoking command in '/home/akash/ROS2_course/week_8_mid_term/ros2_midterm_ws/build/fleet_action': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/akash/ROS2_course/week_8_mid_term/ros2_midterm_ws/build/fleet_action
+Invoked command in '/home/akash/ROS2_course/week_8_mid_term/ros2_midterm_ws/build/fleet_action' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/akash/ROS2_course/week_8_mid_term/ros2_midterm_ws/build/fleet_action

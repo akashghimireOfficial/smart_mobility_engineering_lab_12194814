@@ -29,3 +29,7 @@ This reporsitory is created to Lab Session of `Smart Mobility Engineering Lab` f
     - [ws_files](week7/w7_ws/ )
     - [Detailed Explaination Here.](week7/about.md)
 
+3. **Week 4**: ``Mid Term Assignment``
+    - [ws_files](week_8_mid_term/ros2_midterm_ws/ )
+    - [Detailed Explaination Here.](week7/Readme.md)
+    

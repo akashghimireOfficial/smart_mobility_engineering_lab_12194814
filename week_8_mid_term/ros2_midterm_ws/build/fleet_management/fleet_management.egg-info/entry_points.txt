@@ -1,0 +1,4 @@
+[console_scripts]
+fleet_management_client = fleet_management.fleet_management_client:main
+fleet_management_server_cli = fleet_management.fleet_management_server_cli:main
+

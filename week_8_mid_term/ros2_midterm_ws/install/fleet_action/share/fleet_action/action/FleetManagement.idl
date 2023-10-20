@@ -1,0 +1,24 @@
+// generated from rosidl_adapter/resource/action.idl.em
+// with input from fleet_action/action/FleetManagement.action
+// generated code does not contain a copyright notice
+
+
+module fleet_action {
+  module action {
+    @verbatim (language="comment", text=
+      "Goal")
+    struct FleetManagement_Goal {
+      int32 fleet_size;
+    };
+    @verbatim (language="comment", text=
+      "Result")
+    struct FleetManagement_Result {
+      sequence<string> routes;
+    };
+    @verbatim (language="comment", text=
+      "Feedback")
+    struct FleetManagement_Feedback {
+      float completion_percentage;
+    };
+  };
+};

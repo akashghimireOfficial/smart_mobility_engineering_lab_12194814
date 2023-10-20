@@ -1,0 +1,8 @@
+# Goal
+int32 fleet_size
+---
+# Result
+string[] routes
+---
+# Feedback
+float32 completion_percentage
