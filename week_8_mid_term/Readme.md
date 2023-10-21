@@ -88,13 +88,19 @@ Here's a breakdown of the project's directory structure:
 
 ## Directory Structure
 
-### `fleet_management/`
+The [ros2_midterm_ws](ros2_midterm_ws/) have two packages: a) `fleet_action`, and b) `fleet_management`.  `fleet_action` package is used for defining action file : `FleetManagement.action`.  `fleet_management` is the *main* package of our workspace. This consist of `fleet_management_server_cli`,`fleet_management_client`, `launch files`.  
+
+Here, we have explained the working directory in more detailed: 
+
+### 1.  `action/`
+Package for action definitions (from the `action_fleet` package).
+- `FleetManagement.action`
+
+### 2. `fleet_management/`
 
 Main directory for the project.
 
-#### `action/`
-Folder for action definitions (from the `action_fleet` package).
-- `FleetManagement.action`
+
 
 #### `fleet_management/`
 Python module for the package.
@@ -192,7 +198,9 @@ class FleetManagementServer(Node):
 ```
 
 - We begin by importing the necessary libraries. rclpy is the standard ROS 2 Python library, while time is used to introduce delays in the simulation.
+
 - ActionServer is the ROS 2 utility to create an action server, and Node is a fundamental class for creating ROS nodes.
+
 - FleetManagement is our custom action defined in the fleet_action package.
 
 
