@@ -31,5 +31,5 @@ This reporsitory is created to Lab Session of `Smart Mobility Engineering Lab` f
 
 3. **Week 8**: ``Mid Term Assignment``
     - [ws_files](week_8_mid_term/ros2_midterm_ws/ )
-    - [Detailed Explaination Here.](week_8_mid_term//Readme.md)
+    - [Detailed Explaination Here.](week_8_mid_term//Readme.md) 
     

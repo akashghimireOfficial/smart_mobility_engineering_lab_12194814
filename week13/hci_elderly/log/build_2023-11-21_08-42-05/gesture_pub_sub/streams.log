@@ -1,0 +1,23 @@
+[0.902s] Invoking command in '/home/akash/hci_elderly/src/gesture_pub_sub': PYTHONPATH=/home/akash/hci_elderly/build/gesture_pub_sub/prefix_override:/home/akash/hci_elderly/install/gesture_pub_sub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/gesture_pub_sub build --build-base /home/akash/hci_elderly/build/gesture_pub_sub/build install --record /home/akash/hci_elderly/build/gesture_pub_sub/install.log --single-version-externally-managed
+[1.168s] running egg_info
+[1.169s] writing ../../build/gesture_pub_sub/gesture_pub_sub.egg-info/PKG-INFO
+[1.169s] writing dependency_links to ../../build/gesture_pub_sub/gesture_pub_sub.egg-info/dependency_links.txt
+[1.170s] writing entry points to ../../build/gesture_pub_sub/gesture_pub_sub.egg-info/entry_points.txt
+[1.170s] writing requirements to ../../build/gesture_pub_sub/gesture_pub_sub.egg-info/requires.txt
+[1.170s] writing top-level names to ../../build/gesture_pub_sub/gesture_pub_sub.egg-info/top_level.txt
+[1.173s] reading manifest file '../../build/gesture_pub_sub/gesture_pub_sub.egg-info/SOURCES.txt'
+[1.173s] writing manifest file '../../build/gesture_pub_sub/gesture_pub_sub.egg-info/SOURCES.txt'
+[1.174s] running build
+[1.174s] running build_py
+[1.174s] running install
+[1.175s] /usr/lib/python3/dist-packages/setuptools/command/install.py:34: SetuptoolsDeprecationWarning: setup.py install is deprecated. Use build and pip and other standards-based tools.
+[1.175s]   warnings.warn(
+[1.175s] running install_lib
+[1.177s] running install_data
+[1.178s] running install_egg_info
+[1.181s] removing '/home/akash/hci_elderly/install/gesture_pub_sub/lib/python3.10/site-packages/gesture_pub_sub-0.0.0-py3.10.egg-info' (and everything under it)
+[1.181s] Copying ../../build/gesture_pub_sub/gesture_pub_sub.egg-info to /home/akash/hci_elderly/install/gesture_pub_sub/lib/python3.10/site-packages/gesture_pub_sub-0.0.0-py3.10.egg-info
+[1.182s] running install_scripts
+[1.208s] Installing gesture_publisher script to /home/akash/hci_elderly/install/gesture_pub_sub/lib/gesture_pub_sub
+[1.208s] writing list of installed files to '/home/akash/hci_elderly/build/gesture_pub_sub/install.log'
+[1.244s] Invoked command in '/home/akash/hci_elderly/src/gesture_pub_sub' returned '0': PYTHONPATH=/home/akash/hci_elderly/build/gesture_pub_sub/prefix_override:/home/akash/hci_elderly/install/gesture_pub_sub/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 setup.py egg_info --egg-base ../../build/gesture_pub_sub build --build-base /home/akash/hci_elderly/build/gesture_pub_sub/build install --record /home/akash/hci_elderly/build/gesture_pub_sub/install.log --single-version-externally-managed

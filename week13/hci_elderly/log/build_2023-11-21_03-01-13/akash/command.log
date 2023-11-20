@@ -1,0 +1,6 @@
+Invoking command in '/home/akash/hci_elderly/build/akash': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/akash/hci_elderly/src/akash -DCMAKE_INSTALL_PREFIX=/home/akash/hci_elderly/install/akash
+Invoked command in '/home/akash/hci_elderly/build/akash' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/akash/hci_elderly/src/akash -DCMAKE_INSTALL_PREFIX=/home/akash/hci_elderly/install/akash
+Invoking command in '/home/akash/hci_elderly/build/akash': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/akash/hci_elderly/build/akash -- -j16 -l16
+Invoked command in '/home/akash/hci_elderly/build/akash' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/akash/hci_elderly/build/akash -- -j16 -l16
+Invoking command in '/home/akash/hci_elderly/build/akash': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/akash/hci_elderly/build/akash
+Invoked command in '/home/akash/hci_elderly/build/akash' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/akash/hci_elderly/build/akash
