@@ -33,3 +33,11 @@ This reporsitory is created to Lab Session of `Smart Mobility Engineering Lab` f
     - [ws_files](week_8_mid_term/ros2_midterm_ws/ )
     - [Detailed Explaination Here.](week_8_mid_term//Readme.md) 
     
+
+
+3. **Week 8**: ``Mid Term Assignment``
+    - [gesture_images](week13/gestures/)
+    - [Source Code](week13/hci_elderly/)
+    - [Demo Video on Youtube](https://youtu.be/1Ay895iYRiI)
+
+    
