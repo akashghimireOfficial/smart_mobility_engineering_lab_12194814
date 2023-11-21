@@ -35,7 +35,7 @@ This reporsitory is created to Lab Session of `Smart Mobility Engineering Lab` f
     
 
 
-3. **Week 8**: ``Mid Term Assignment``
+3. **Week 13**: ``Gesture based subscriber and Publisher``
     - [gesture_images](week13/gestures/)
     - [Source Code](week13/hci_elderly/)
     - [Demo Video on Youtube](https://youtu.be/1Ay895iYRiI)
