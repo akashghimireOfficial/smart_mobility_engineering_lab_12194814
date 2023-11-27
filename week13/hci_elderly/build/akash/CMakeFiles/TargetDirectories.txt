@@ -1,9 +1,0 @@
-/home/akash/hci_elderly/build/akash/CMakeFiles/uninstall.dir
-/home/akash/hci_elderly/build/akash/CMakeFiles/akash_uninstall.dir
-/home/akash/hci_elderly/build/akash/CMakeFiles/test.dir
-/home/akash/hci_elderly/build/akash/CMakeFiles/edit_cache.dir
-/home/akash/hci_elderly/build/akash/CMakeFiles/rebuild_cache.dir
-/home/akash/hci_elderly/build/akash/CMakeFiles/list_install_components.dir
-/home/akash/hci_elderly/build/akash/CMakeFiles/install.dir
-/home/akash/hci_elderly/build/akash/CMakeFiles/install/local.dir
-/home/akash/hci_elderly/build/akash/CMakeFiles/install/strip.dir

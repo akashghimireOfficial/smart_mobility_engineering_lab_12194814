@@ -1,3 +1,0 @@
-[console_scripts]
-gesture_publisher = gesture_pub_sub.ges_pub:main
-
